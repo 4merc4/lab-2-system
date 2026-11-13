@@ -1,0 +1,60 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 614  of event 'cycles:P'
+# Event count (approx.): 638427680
+#
+# Children      Self  Command    Shared Object         Symbol                
+# ........  ........  .........  ....................  ......................
+#
+    99.38%     0.00%  matmul_O3  matmul_O3             [.] 0x000055646edd35b5
+            |
+            ---0x55646edd35b5
+               0x7f57a502a718
+               0x7f57a502a601
+               |          
+               |--84.51%--0x55646edd33c6
+               |          |          
+               |          |--39.25%--0x55646edd38f2
+               |          |          
+               |          |--20.96%--0x55646edd38ec
+               |          |          
+               |          |--15.34%--0x55646edd38f7
+               |          |          
+               |          |--4.14%--0x55646edd38fe
+               |          |          
+               |           --3.48%--0x55646edd38e6
+               |          
+               |--2.15%--0x55646edd3323
+               |          |          
+               |           --1.99%--0x7f57a5198480
+               |                     |          
+               |                      --1.82%--0xffffffffb500134b
+               |                                0xffffffffb623630d
+               |                                0xffffffffb52926a4
+               |                                0xffffffffb5590ba5
+               |                                0xffffffffb55909a2
+               |                                |          
+               |                                 --0.83%--0xffffffffb558e1d3
+               |                                           0xffffffffb55f8c57
+               |                                           0xffffffffb55f61ce
+               |                                           0xffffffffb55c2495
+               |          
+               |--2.14%--0x55646edd32f1
+               |          |          
+               |           --1.98%--0x7f57a5198480
+               |                     |          
+               |                      --1.65%--0xffffffffb500134b
+               |                                |          
+               |                                 --1.49%--0xffffffffb623630d
+               |                                           0xffffffffb52926a4
+               |                                           0xffffffffb5590ba5
+               |                                           |          
+               |                                            --1.32%--0xffffffffb55909a2
+               |                                                      |          
+               |                                                       --0.66%--0xffffffffb558e1d3
+               |          
+               |--2.04%--0x55646edd32bf
+               |          0x7f57a5198480

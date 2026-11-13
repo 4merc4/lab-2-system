@@ -1,0 +1,23 @@
+mode=naive n=1024 checksum=268523926.330608 time=4.641 s
+
+ Performance counter stats for './matmul_O3 naive 1024':
+
+        4663700109      task-clock                       #    1.000 CPUs utilized             
+                15      context-switches                 #    3.216 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+              6289      page-faults                      #    1.349 K/sec                     
+        5571794916      instructions                     #    0.28  insn per cycle            
+                                                  #    0.02  stalled cycles per insn     (85.69%)
+       20072154861      cycles                           #    4.304 GHz                         (85.67%)
+         133785332      stalled-cycles-frontend          #    0.67% frontend cycles idle        (85.68%)
+         572637903      branches                         #  122.786 M/sec                       (85.73%)
+           2537438      branch-misses                    #    0.44% of all branches             (85.76%)
+        1701120462      L1-dcache-loads                  #  364.758 M/sec                       (85.76%)
+        1240925584      L1-dcache-load-misses            #   72.95% of all L1-dcache accesses   (85.70%)
+
+       4.664784511 seconds time elapsed
+
+       4.650182000 seconds user
+       0.011995000 seconds sys
+
+

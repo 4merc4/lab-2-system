@@ -1,0 +1,23 @@
+mode=opt n=1024 checksum=268523926.330608 time=0.121 s
+
+ Performance counter stats for './matmul_O3 opt 1024':
+
+         151526498      task-clock                       #    0.997 CPUs utilized             
+                 1      context-switches                 #    6.600 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+              6289      page-faults                      #   41.504 K/sec                     
+        1129334148      instructions                     #    1.82  insn per cycle            
+                                                  #    0.03  stalled cycles per insn     (84.19%)
+         620873229      cycles                           #    4.097 GHz                         (84.12%)
+          29843060      stalled-cycles-frontend          #    4.81% frontend cycles idle        (85.95%)
+         179006453      branches                         #    1.181 G/sec                       (86.82%)
+           1507544      branch-misses                    #    0.84% of all branches             (86.78%)
+         864165246      L1-dcache-loads                  #    5.703 G/sec                       (86.83%)
+         160239425      L1-dcache-load-misses            #   18.54% of all L1-dcache accesses   (85.30%)
+
+       0.151967006 seconds time elapsed
+
+       0.134583000 seconds user
+       0.015833000 seconds sys
+
+

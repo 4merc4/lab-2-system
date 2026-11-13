@@ -1,0 +1,60 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 16K of event 'cycles:P'
+# Event count (approx.): 16945212215
+#
+# Children      Self  Command    Shared Object         Symbol                
+# ........  ........  .........  ....................  ......................
+#
+    99.98%     0.00%  matmul_O3  matmul_O3             [.] 0x000064c6b6cac5b5
+            |
+            ---0x64c6b6cac5b5
+               0x768b7562a718
+               |          
+                --99.97%--0x768b7562a601
+                          |          
+                           --99.41%--0x64c6b6cac50d
+                                     |          
+                                     |--41.53%--0x64c6b6cac70d
+                                     |          
+                                     |--35.60%--0x64c6b6cac704
+                                     |          
+                                     |--9.49%--0x64c6b6cac721
+                                     |          
+                                     |--8.47%--0x64c6b6cac719
+                                     |          
+                                      --4.00%--0x64c6b6cac712
+
+    99.98%     0.00%  matmul_O3  libc.so.6             [.] 0x0000768b7562a718
+            |
+            ---0x768b7562a718
+               |          
+                --99.97%--0x768b7562a601
+                          |          
+                           --99.41%--0x64c6b6cac50d
+                                     |          
+                                     |--41.53%--0x64c6b6cac70d
+                                     |          
+                                     |--35.60%--0x64c6b6cac704
+                                     |          
+                                     |--9.49%--0x64c6b6cac721
+                                     |          
+                                     |--8.47%--0x64c6b6cac719
+                                     |          
+                                      --4.00%--0x64c6b6cac712
+
+    99.97%     0.00%  matmul_O3  libc.so.6             [.] 0x0000768b7562a601
+            |
+            ---0x768b7562a601
+               |          
+                --99.41%--0x64c6b6cac50d
+                          |          
+                          |--41.53%--0x64c6b6cac70d
+                          |          
+                          |--35.60%--0x64c6b6cac704
+                          |          
+                          |--9.49%--0x64c6b6cac721
+                          |          

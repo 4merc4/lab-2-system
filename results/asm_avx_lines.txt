@@ -1,0 +1,2 @@
+g++ -O0 -S -masm=intel -o asm_O0.s matmul.cpp
+g++ -O3 -march=native -S -masm=intel -o asm_O3.s matmul.cpp
